@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Ligar/Desligar</title>
+    <style>
+        button {
+            padding: 20px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        .ligar {
+            background-color: #4CAF50
+        }
+        .desligar {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<form action="/led/ligar" method="post">
+    <button type="submit" name="action" value="ligar" class="ligar">
+        Ligar
+    </button>
+</form>
+<form action="/led/desligar" method="post">
+    <button type="submit" name="action" value="desligar" class="desligar">
+        Desligar
+    </button>
+</form>
+
+
+</body>
+</html>
